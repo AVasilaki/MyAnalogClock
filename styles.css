@@ -22,20 +22,21 @@ body {
   /* position: relative; */
 }
 .round {
-  width: 250px;
-  height: 250px;
-  background-image: url(./arrow-27324_640.png);
-  background-size: 100px;
+  width: 350px;
+  height: 350px;
+  background-image: url(./clock1c.png);
+  background-size: 300px;
   background-repeat: no-repeat;
-  background-position: 90% 50%;
+  background-position: 90px;
+  /* background-position: 2.5cm 1.8cm; */
   /* background-color: white; */
   border-radius: 50%;
   /* position: absolute; */
-  top: 50%;
+  /* top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
 
-  transform: rotate(235deg);
+  transform: rotate(90deg);
 }
 .square {
   width: calc(100% / 1.414);
