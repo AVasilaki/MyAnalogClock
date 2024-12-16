@@ -1,0 +1,48 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.clock {
+  display: flex;
+  width: 515px;
+  height: 530px;
+  background-color: aqua;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5f/Colmar_sun_dial_1582.jpg);
+  background-repeat: no-repeat;
+  background-size: 800px;
+  background-position: center;
+  background-position-y: -150px;
+  background-position-x: -135px;
+  border-radius: 40%;
+  justify-content: center;
+  align-items: center;
+  /* position: relative; */
+}
+.round {
+  width: 250px;
+  height: 250px;
+  background-image: url(./arrow-27324_640.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+  /* background-color: white; */
+  border-radius: 50%;
+  /* position: absolute; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  transform: rotate(235deg);
+}
+.square {
+  width: calc(100% / 1.414);
+  height: calc(100% / 1.414);
+  /* background-color: blue; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
