@@ -21,7 +21,7 @@ body {
   align-items: center;
   /* position: relative; */
 }
-.round {
+.hour {
   width: 350px;
   height: 350px;
   background-image: url(./clock1c.png);
@@ -35,15 +35,13 @@ body {
   /* top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); */
-
-  transform: rotate(90deg);
+  /* box-shadow: 5px -5px 5px 0px #4f4941; */
+  transform: rotate(4deg);
 }
-.square {
-  width: calc(100% / 1.414);
-  height: calc(100% / 1.414);
-  /* background-color: blue; */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.shadow {
+  background-image: url(./shadowHour.png);
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: 87px;
+  transform: rotate(150deg);
 }
