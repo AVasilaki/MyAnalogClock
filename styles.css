@@ -56,13 +56,19 @@ body {
   opacity: 50%;
 }
 .minute {
+  position: absolute;
   width: 350px;
   height: 350px;
+
+  top: 125px;
+  left: 112px;
   background-repeat: no-repeat;
-  background-size: 200px;
-  background-image: url(./arrow-27324_640.png);
-  background-position: 120px 130px;
+  background-size: 350px;
+  background-image: url(./minuteArrows\(1\).png);
+  background-position: -14px 32px;
   /* background-color: blue; */
-  background-color: transparent;
-  transform: rotate(10deg);
+  /* background-color: transparent; */
+  transform: rotate(200deg);
+  border: 3px solid black;
+  border-radius: 50%;
 }
