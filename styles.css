@@ -6,17 +6,18 @@ body {
 }
 
 .clock {
-  display: flex;
-  width: 515px;
-  height: 530px;
+  /* display: flex; */
+  position: relative;
+  width: 580px;
+  height: 600px;
   background-color: aqua;
   background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5f/Colmar_sun_dial_1582.jpg);
   background-repeat: no-repeat;
-  background-size: 800px;
+  background-size: 900px;
   background-position: center;
-  background-position-y: -150px;
-  background-position-x: -135px;
-  border-radius: 40%;
+  background-position-y: -165px;
+  background-position-x: -152px;
+  /* border-radius: 40%; */
   justify-content: center;
   align-items: center;
   /* position: relative; */
@@ -25,23 +26,43 @@ body {
   width: 350px;
   height: 350px;
   background-image: url(./clock1c.png);
-  background-size: 300px;
+  background-size: 350px;
   background-repeat: no-repeat;
-  background-position: 90px;
+  background-position: 80px;
   /* background-position: 2.5cm 1.8cm; */
   /* background-color: white; */
   border-radius: 50%;
-  /* position: absolute; */
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
+  position: absolute;
+  top: 125px;
+  left: 112px;
+  /* transform: translate(-50%, -50%); */
   /* box-shadow: 5px -5px 5px 0px #4f4941; */
-  transform: rotate(4deg);
+  transform: rotate(0deg);
+  border: 5px solid red;
 }
-.shadow {
+
+.shadow-hour {
+  position: absolute;
+  top: 125px;
+  left: 112px;
+  width: 350px;
+  height: 350px;
   background-image: url(./shadowHour.png);
-  background-size: 300px;
+  background-size: 350px;
   background-repeat: no-repeat;
-  background-position: 87px;
-  transform: rotate(150deg);
+  background-position: 84px;
+  border: 3px solid blue;
+  transform: rotate(4deg);
+  opacity: 50%;
+}
+.minute {
+  width: 350px;
+  height: 350px;
+  background-repeat: no-repeat;
+  background-size: 200px;
+  background-image: url(./arrow-27324_640.png);
+  background-position: 120px 130px;
+  /* background-color: blue; */
+  background-color: transparent;
+  transform: rotate(10deg);
 }
