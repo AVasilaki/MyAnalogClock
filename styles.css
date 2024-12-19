@@ -37,8 +37,8 @@ body {
   left: 112px;
   /* transform: translate(-50%, -50%); */
   /* box-shadow: 5px -5px 5px 0px #4f4941; */
-  transform: rotate(0deg);
-  border: 5px solid red;
+  transform: rotate(190deg);
+  /* border: 5px solid red; */
 }
 
 .shadow-hour {
@@ -51,8 +51,8 @@ body {
   background-size: 350px;
   background-repeat: no-repeat;
   background-position: 84px;
-  border: 3px solid blue;
-  transform: rotate(4deg);
+  /* border: 3px solid blue; */
+  transform: rotate(194deg);
   opacity: 50%;
 }
 .minute {
@@ -68,8 +68,8 @@ body {
   background-position: -14px 32px;
   /* background-color: blue; */
   /* background-color: transparent; */
-  transform: rotate(200deg);
-  border: 3px solid black;
+  transform: rotate(250deg);
+  /* border: 3px solid black; */
   border-radius: 50%;
 }
 .shadow-minute {
@@ -77,13 +77,13 @@ body {
   width: 350px;
   height: 350px;
 
-  top: 95px;
-  left: 91px;
+  top: 125px;
+  left: 112px;
   background-repeat: no-repeat;
-  background-size: 160px;
-  background-image: url(./shadowminuteArrow.png);
-  background-position: -12px 35px;
-  border: 3px solid white;
-  transform: rotate(200deg);
+  background-size: 350px;
+  background-image: url(./minuteArrows\(1\)Shadow.png);
+  background-position: -18px 38px;
+  /* border: 3px solid white; */
+  transform: rotate(252deg);
   opacity: 50%;
 }
