@@ -3,16 +3,18 @@ body {
   align-items: center;
   justify-content: start;
   box-sizing: border-box;
+  background-image: url(./images/IMG_20210126_161301.jpg);
+  background-size: 900px;
 }
 .calendar {
   margin-right: 50px;
 }
 .date-style {
   margin-left: 20px;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   font-size: 20px;
-  border: 1px solid black;
-  padding: 20px;
+  /* border: 1px solid black; */
+  /* padding: 20px; */
 }
 .clock {
   position: relative;
