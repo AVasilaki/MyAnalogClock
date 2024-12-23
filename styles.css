@@ -10,13 +10,15 @@ body {
   width: 580px;
   height: 600px;
   background-color: aqua;
+
   background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5f/Colmar_sun_dial_1582.jpg);
+
   background-repeat: no-repeat;
   background-size: 900px;
   background-position: center;
   background-position-y: -165px;
   background-position-x: -152px;
-  /* border-radius: 40%; */
+  border-radius: 4%;
 }
 .hour {
   width: 350px;
