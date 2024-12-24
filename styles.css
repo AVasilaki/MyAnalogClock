@@ -1,20 +1,36 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
 body {
   display: flex;
   align-items: center;
   justify-content: start;
   box-sizing: border-box;
   background-image: url(./images/IMG_20210126_161301.jpg);
-  background-size: 900px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .calendar {
   margin-right: 50px;
+  padding: 10px;
+  color: aliceblue;
+  font-size: 30px;
+  border-radius: 30px;
+  opacity: 80%;
+  background-image: linear-gradient(to top, rgb(179, 73, 73), rgb(0, 0, 0));
 }
 .date-style {
-  margin-left: 20px;
-  /* margin-bottom: 10px; */
+  margin-bottom: 10px;
   font-size: 20px;
   /* border: 1px solid black; */
   /* padding: 20px; */
+}
+.date-year {
+  font-size: 30px;
+  margin-left: 50px;
 }
 .clock {
   position: relative;
