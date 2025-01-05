@@ -7,6 +7,8 @@ const date = document.querySelector(".date");
 const month = document.querySelector(".date-month");
 const yer = document.querySelector(".date-year");
 
+let interval = 60000;
+
 const arrDays = ["неділя", "понеділок", "вівторок", "середа", "четвер", "п'ятниця", "субота"];
 const arrMonth = [
   "січня",
@@ -31,6 +33,7 @@ function getTime() {
   const currentDate = currentTime.getDate();
   const currentMonth = arrMonth[currentTime.getMonth()];
   const currentYear = currentTime.getFullYear();
+  console.log(currentHour);
 
   day.textContent = currentDay;
   date.textContent = currentDate;
@@ -51,4 +54,4 @@ getTime();
 
 setInterval(() => {
   getTime();
-}, 60000);
+}, interval);
