@@ -6,6 +6,8 @@ const day = document.querySelector(".date-day");
 const date = document.querySelector(".date");
 const month = document.querySelector(".date-month");
 const yer = document.querySelector(".date-year");
+const season = document.querySelector(".season");
+console.log(season);
 
 let interval = 60000;
 
@@ -33,13 +35,18 @@ function getTime() {
   const currentDate = currentTime.getDate();
   const currentMonth = arrMonth[currentTime.getMonth()];
   const currentYear = currentTime.getFullYear();
-  console.log(currentHour);
 
   day.textContent = currentDay;
   date.textContent = currentDate;
   month.textContent = currentMonth;
   yer.textContent = currentYear;
-
+  if (currentMonth === "березня" || currentMonth === "квітня" || currentMonth === "травня") {
+    season.textContent = "spring";
+  } else if (currentMonth === "червня" || currentMonth === "липня" || currentMonth === "серпня") {
+    season.textContent = "summer";
+  } else if (currentMonth === "вересня" || currentMonth === "жовтня" || currentMonth === "листопада") {
+    season.textContent = "autumn";
+  }
   const rotateMinute = (360 / 60) * currentMinute + 55;
   const rotateShadowMinute = (360 / 60) * currentMinute + 57;
   const rotateHour = (360 / 12) * currentHour - 85 + (360 / 12 / 60) * currentMinute;
