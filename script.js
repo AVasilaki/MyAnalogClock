@@ -7,7 +7,7 @@ const date = document.querySelector(".date");
 const month = document.querySelector(".date-month");
 const yer = document.querySelector(".date-year");
 const season = document.querySelector(".season");
-console.log(season);
+const body = document.querySelector("body");
 
 let interval = 60000;
 
@@ -44,6 +44,7 @@ function getTime() {
     season.textContent = "spring";
   } else if (currentMonth === "червня" || currentMonth === "липня" || currentMonth === "серпня") {
     season.textContent = "summer";
+    body.style.backgroundImage = "url(./images/IMG_20200705_181900.jpg)";
   } else if (currentMonth === "вересня" || currentMonth === "жовтня" || currentMonth === "листопада") {
     season.textContent = "autumn";
   }
